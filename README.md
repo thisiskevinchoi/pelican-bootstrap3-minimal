@@ -129,7 +129,7 @@ Set the `FAVICON` option in your `pelicanconf.py`. For example: `FAVICON = 'imag
 
 ### Index page
 
-* If `DISPLAY_ARTICLE_INFO_ON_INDEX` is set to _True_, article info (date, tags) will be show under the title for each article, otherwise only title and summary will be shown (default). 
+* If `DISPLAY_ARTICLE_INFO_ON_INDEX` is set to _True_, article info (date, tags) will be show under the title for each article, otherwise only title and summary will be shown (default).
 
 ### Short menu labels for pages
 
@@ -157,6 +157,8 @@ A banner image can be added to the theme, displayed with the SITENAME and an opt
 
 ### Sidebar options
 
+To add the sidebar, set `SHOW_SIDEBAR` to _True_.
+
 The following things can be displayed on the sidebar:
 
 * **Social links** can be provided through the `SOCIAL` variable. If it's empty, the section will not be shown
@@ -172,8 +174,6 @@ SOCIAL = (('twitter', 'http://twitter.com/DaanDebie'),
 * **Categories** will be shown if `DISPLAY_CATEGORIES_ON_SIDEBAR` is set to _True_
 * **Recent Posts** will be shown if `DISPLAY_RECENT_POSTS_ON_SIDEBAR` is set to _True_
 	* Use `RECENT_POST_COUNT` to control the amount of recent posts. Defaults to **5**
-
-To remove the sidebar entirely, set `HIDE_SIDEBAR` to _True_.
 
 ### reStructuredText styles
 
@@ -193,7 +193,7 @@ You can optionally declare a [Creative Commons license](http://creativecommons.o
 * To choose the license by name, set `CC_LICENSE` to the common abbreviated name of the license: `"CC-BY"` (require attribution), `"CC-BY-SA"` (require ShareAlike), `"CC-BY-ND"` (NoDerivatives) , `"CC-BY-NC"` (require attribution, no commercial reuse), `"CC-BY-NC-SA"` (require ShareAlike, no commercial reuse), or `"CC-BY-NC-ND"` (NoDerivatives, no commercial reuse).
 * Alternatively, choose the licence by features:
     * `CC_LICENSE_DERIVATIVES` - `"yes"` if permitted, `"no"` if not permitted, and `"ShareAlike"` if derivatives must be shared under the same terms.
-    * `CC_LICENSE_COMMERCIAL` - `"yes"` if commercial reuse is permitted, and `"no"` otherwise. 
+    * `CC_LICENSE_COMMERCIAL` - `"yes"` if commercial reuse is permitted, and `"no"` otherwise.
 * Optionally, you can include attribution markup in the license mark by setting `CC_ATTR_MARKUP` to _True_.
 
 The license choice mirrors the [Creative Commons License Chooser](http://creativecommons.org/choose/). Source for the macro that renders the mark is at http://github.com/hlapp/cc-tools.
@@ -208,7 +208,7 @@ The theme can show your most recently active GitHub repos in the sidebar. To ena
 
 ### Facebook Open Graph
 
-In order to make the Facebook like button and other social sharing options work better, the template contains Open Graph metatags like `<meta property="og:type" content="article"/>`. You can disable them by setting `USE_OPEN_GRAPH` to _False_. You can use `OPEN_GRAPH_FB_APP_ID` to provide a Facebook _app id_. 
+In order to make the Facebook like button and other social sharing options work better, the template contains Open Graph metatags like `<meta property="og:type" content="article"/>`. You can disable them by setting `USE_OPEN_GRAPH` to _False_. You can use `OPEN_GRAPH_FB_APP_ID` to provide a Facebook _app id_.
 You can also provide a default image that will be passed as an Open Graph tag  by setting `OPEN_GRAPH_IMAGE` to a relative file path, which will be prefixed by your site's base url. Optionally, you can override this default image on a per article and per page basis, by setting the `og_image` variable in an article or page.
 
 ### Twitter Cards
@@ -247,7 +247,7 @@ All you have to do, is:
 
 ### Footer
 
-The footer will display a copyright message using the AUTHOR variable and the year of the latest post. If a content license mark is enabled (see above), that will be shown as well. 
+The footer will display a copyright message using the AUTHOR variable and the year of the latest post. If a content license mark is enabled (see above), that will be shown as well.
 
 ## Live example
 
@@ -260,5 +260,3 @@ If you want more examples of what you could do with this theme, have a [look her
 ![](screenshot.png)
 
 ![](screenshot-article.png)
-
-
