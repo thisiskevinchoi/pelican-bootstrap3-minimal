@@ -57,11 +57,8 @@
     {% include 'includes/twitter_cards.html' %}
 
     <!-- Bootstrap -->
-    {% if BOOTSTRAP_THEME %}
-        <link rel="stylesheet" href="{{ SITEURL }}/theme/css/bootstrap.{{ BOOTSTRAP_THEME }}.min.css" type="text/css"/>
-    {% else %}
-        <link rel="stylesheet" href="{{ SITEURL }}/theme/css/bootstrap.min.css" type="text/css"/>
-    {% endif %}
+    <link rel="stylesheet" href="{{ SITEURL }}/theme/css/bootstrap.min.css" type="text/css"/>
+
     <link href="{{ SITEURL }}/theme/css/font-awesome.min.css" rel="stylesheet">
 
     <link href="{{ SITEURL }}/theme/css/pygments/{{ PYGMENTS_STYLE|default('native') }}.css" rel="stylesheet">
@@ -79,6 +76,9 @@
         <link href="{{ SITEURL }}/{{ CUSTOM_CSS }}" rel="stylesheet">
     {% endif %}
 
+    <!-- Custom CSS (Later, change name to custom theme and remove useless css above)-->
+    <link rel="stylesheet" href="{{ SITEURL }}/theme/css/custom.css" type="text/css"/>
+
     {% if FEED_ALL_ATOM %}
         <link href="{{ SITEURL }}/{{ FEED_ALL_ATOM }}" type="application/atom+xml" rel="alternate"
               title="{{ SITENAME }} ATOM Feed"/>
@@ -91,8 +91,8 @@
 </head>
 <body>
 
-<div class="navbar {% if BOOTSTRAP_NAVBAR_INVERSE %}navbar-inverse{% else %}navbar-default{% endif %} navbar-fixed-top" role="navigation">
-    <div class="container">
+<div class="navbar navbar-default navbar-static-top" role="navigation">
+    <div class="container-fluid">
         <div class="navbar-header">
             <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse">
                 <span class="sr-only">Toggle navigation</span>
