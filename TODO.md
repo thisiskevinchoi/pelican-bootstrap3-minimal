@@ -1,0 +1,2 @@
+- Clean up comments in footer.html
+- Have global styles in custom.css
