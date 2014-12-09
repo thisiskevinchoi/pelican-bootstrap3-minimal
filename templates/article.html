@@ -80,11 +80,13 @@
                 </h1>
             </header>
             <div class="entry-content">
+                {% if DISPLAY_ARTICLE_INFO %}
                 <div class="panel">
                     <div class="panel-body">
                         {% include "includes/article_info.html" %}
                     </div>
                 </div>
+                {% endif %}
                 {{ article.content }}
             </div>
             <!-- /.entry-content -->

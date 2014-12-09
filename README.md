@@ -43,6 +43,8 @@ It uses the `tag_cloud` variable for displaying tags in the sidebar. You can con
 
 ### Article info
 
+Set `DISPLAY_ARTICLE_INFO` to True to show article info.
+
 Set `SHOW_ARTICLE_AUTHOR` to True to show the author of the article at the top of the article and in the index of articles. Set `SHOW_ARTICLE_CATEGORY` to show the Category of each article. Set `SHOW_DATE_MODIFIED` to True to show the article modified date next to the published date.
 
 ### Custom CSS
